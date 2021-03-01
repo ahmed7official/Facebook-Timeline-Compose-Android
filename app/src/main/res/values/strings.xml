@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Facebook Timeline Compose</string>
+    <string name="msg_what_your_name">What\'s your name</string>
+    <string name="title_activity_timeline">My Compose App</string>
+    <string name="facebook">facebook</string>
+    <string name="whats_on_your_mind">What\'s on your mind?</string>
+    <string name="live">Live</string>
+    <string name="photo">Photo</string>
+    <string name="room">Room</string>
+    <string name="title_activity_test">TestActivity</string>
+</resources>
