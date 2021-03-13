@@ -1,7 +1,9 @@
 package com.android.compose01.timeline
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.material.TabRowDefaults.tabIndicatorOffset
@@ -17,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import com.android.compose01.R
 import com.android.compose01.ui.theme.iconsBackground
 import com.android.compose01.ui.theme.purple500
-import com.android.compose01.ui.theme.softGray
 
 
 @Composable
