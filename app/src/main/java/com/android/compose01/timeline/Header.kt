@@ -1,19 +1,23 @@
 package com.android.compose01.timeline
 
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.*
 import androidx.compose.material.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.android.compose01.R
+import com.android.compose01.ui.theme.iconsBackground
 import com.android.compose01.ui.theme.purple500
+import com.android.compose01.ui.theme.softGray
 
 
 @Composable
@@ -34,7 +38,12 @@ fun Header() {
         actions = {
 
             IconButton(
-                onClick = {}
+                onClick = {},
+                modifier = Modifier
+                    .size(36.dp)
+                    .clip(CircleShape)
+                    .background(iconsBackground)
+
             ) {
                 Icon(
                     painter = painterResource(R.drawable.ic_round_search_24),
@@ -43,8 +52,15 @@ fun Header() {
                 )
             }
 
+            Spacer(modifier = Modifier.padding(start = 8.dp))
+
             IconButton(
-                onClick = {}
+                onClick = {},
+                modifier = Modifier
+                    .size(36.dp)
+                    .clip(CircleShape)
+                    .background(iconsBackground)
+
             ) {
                 Icon(
                     painter = painterResource(R.drawable.ic_messenger),
@@ -52,6 +68,8 @@ fun Header() {
                     tint = Color.Black,
                 )
             }
+
+            Spacer(modifier = Modifier.padding(start = 8.dp))
 
         },
     )
